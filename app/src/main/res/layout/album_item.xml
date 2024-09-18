@@ -11,11 +11,11 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="99dp">
+        android:layout_height="wrap_content">
 
         <TextView
             android:id="@+id/tV_name"
-            android:layout_width="wrap_content"
+            android:layout_width="320dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
@@ -28,11 +28,13 @@
 
         <TextView
             android:id="@+id/tV_artist"
-            android:layout_width="wrap_content"
+            android:layout_width="320dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
             android:text="@{album.artist}"
             android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@id/tV_name"
             app:layout_constraintTop_toBottomOf="@+id/tV_name"
             tools:text="Album Artist" />
