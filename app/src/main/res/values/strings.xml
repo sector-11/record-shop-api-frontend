@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Record Shop App</string>
+    <string name="main_title_text">In Stock</string>
 </resources>
