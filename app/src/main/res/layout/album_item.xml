@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="album"
+            type="com.northcoders.recordshopapp.model.Album" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="99dp">
+
+        <TextView
+            android:id="@+id/tV_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@{album.albumName}"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Album Name" />
+
+        <TextView
+            android:id="@+id/tV_artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@{album.artist}"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@id/tV_name"
+            app:layout_constraintTop_toBottomOf="@+id/tV_name"
+            tools:text="Album Artist" />
+
+        <TextView
+            android:id="@+id/tV_genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@{album.genre}"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@id/tV_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Genre" />
+
+        <TextView
+            android:id="@+id/tV_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{album.releaseYear}"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@id/tV_artist"
+            app:layout_constraintEnd_toEndOf="@id/tV_genre"
+            tools:text="19XX" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
