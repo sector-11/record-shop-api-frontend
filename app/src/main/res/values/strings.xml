@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Record Shop App</string>
     <string name="main_title_text">In Stock</string>
+    <string name="add_new_album">Add New Album</string>
+    <string name="album_title_edit_hint">Album Title</string>
+    <string name="artist_name_edit_hint">Artist Name</string>
+    <string name="release_year_edit_hint">Release Year</string>
+    <string name="genre_edit_hint">Genre</string>
+    <string name="submit">Submit</string>
 </resources>
