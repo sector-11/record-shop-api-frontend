@@ -64,8 +64,12 @@ public class Album extends BaseObservable {
         return String.valueOf(releaseYear);
     }
 
-    public void setReleaseYear(int releaseYear) {
-        this.releaseYear = releaseYear;
+    public void setReleaseYear(String releaseYear) {
+        try {
+            this.releaseYear = Integer.parseInt(releaseYear);
+        } catch (NumberFormatException e) {
+            //do nothing
+        }
         notifyPropertyChanged(BR.releaseYear);
     }
 
